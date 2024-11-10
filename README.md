@@ -1,3 +1,31 @@
+
+
+
+
+```js
+
+const { Pool } = require('pg')
+require('dotenv').config()
+
+const pool = new Pool({
+  connectionString: 
+  "postgres://default:WkmUZ3YfwJs9@ep-autumn-cherry-a43x07kj-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require?sslmode=require",
+})
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 # Create React App
 
 This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
