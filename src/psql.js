@@ -30,10 +30,9 @@ pool.query("SELECT * FROM pets", (err, res) => {
 pool.post("https://localhost:3000/api/post", async (req, res) => {
   const { name, owner } = req.body;
   try {
-    const result = await pool.query("INSERT INTO pets (name, owner) VALUES ($1, $2) RETURNING *", [
-      name,
-     owner
-    ]);
+    const result = await pool.query("INSERT INTO pets (name, owner) VALUES ($1, $2) RETURNING *", [ name,owner,]
+      
+    );
     res.json(result.rows[0]);
   } catch (err) {
     res.status(500).json({ error: err.message });
