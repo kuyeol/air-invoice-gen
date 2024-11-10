@@ -15,10 +15,27 @@ const pool = new Pool({
 
 ```
 
+POSTGRES_URL="
+postgres://default:WkmUZ3YfwJs9@ep-autumn-cherry-a43x07kj-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require
+"
+POSTGRES_PRISMA_URL="postgres://default:WkmUZ3YfwJs9@ep-autumn-cherry-a43x07kj-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
+POSTGRES_URL_NO_SSL="postgres://default:WkmUZ3YfwJs9@ep-autumn-cherry-a43x07kj-pooler.us-east-1.aws.neon.tech:5432/verceldb"
+POSTGRES_URL_NON_POOLING="postgres://default:WkmUZ3YfwJs9@ep-autumn-cherry-a43x07kj.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+
+POSTGRES_USER="default"
+
+POSTGRES_HOST="ep-autumn-cherry-a43x07kj-pooler.us-east-1.aws.neon.tech"
+
+POSTGRES_PASSWORD="WkmUZ3YfwJs9"
+
+POSTGRES_DATABASE="verceldb"
 
 
-
-
+  user: "default",
+  host: "ep-autumn-cherry-a43x07kj-pooler.us-east-1.aws.neon.tech",
+  database: "verceldb",
+  password: "WkmUZ3YfwJs9",
+  port: 5432,
 
 
 
